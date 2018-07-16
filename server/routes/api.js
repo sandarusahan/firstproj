@@ -55,7 +55,7 @@ router.post('/video', function(req, res){
 
 //update
 router.put('/video/:id', function(req, res){
-    console.log('Upadate a video');
+    console.log('Upadate a vid eo');
     Video.findByIdAndUpdate(req.params.id,
     {
         $set: {title: req.body.title, url: req.body.url, description: req.body.description}
